@@ -29,27 +29,30 @@
     <!--This is the main content area-->
     <div class="content">
         <div class="wrapper">
-            <!--Contact Form Title-->
-            <div class="contact title">
-                <h2>Contact</h2>
-            </div>
-            <!--Defines the fields of the contact form-->
-            <div class="contact-form">
-                <form id="contact-form" method="POST" action="">
-                    <input name="name" class="form-control" type="text" placeholder="Name">
-                    <br>
-                    <input name="email" class="form-control" type="email" placeholder="Email">
-                    <br>
-                    <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
-                    <input type="submit" class="form-control submit" value="Send Message">
-                </form>
-            </div>
+            <section class="main">
+                <!--Contact Form Title-->
+                <div class="contact title">
+                    <h2>Contact</h2>
+                </div>
+                <!--Defines the fields of the contact form-->
+                <div class="contact-form">
+                    <form id="contact-info" method="POST" action="">
+                        <p>Name</p>
+                        <input name="name" class="form-control" type="text">
+                        <br>
+                        <p>Email</p>
+                        <input name="email" class="form-control" type="email">
+                        <br>
+                        <p>Message</p>
+                        <textarea name="message" class="form-control" rows="10"></textarea><br>
+                        <input type="submit" class="submit" value="Submit">
+                    </form>
+                </div>
+            </section>  
         </div> 
     </div>
-    <footer>
-        <div class="wrapper">
-            <p>Copyright 2019</p>
-        </div>
+    <footer class="footer">
+        <p>Copyright 2019</p>
     </footer>     
 </body>
 </html>
