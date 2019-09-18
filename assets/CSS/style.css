@@ -1,0 +1,94 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* text CSS */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    margin: 0;
+    color: #4aaaa5;
+}
+
+a, p{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+/* Header elements*/
+header{
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.name{
+    width: 25vw;
+    justify-self: flex-start;
+}
+
+.name h1{
+    color: #ffffff;
+    background-color: #4aaaa5;
+    padding: 20px;
+}
+
+.header-nav{
+    margin:0;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+/* wrapper style*/
+.wrapper{
+    margin: auto;
+    width: 70%;
+    display: flex;
+}
+
+.top{
+    justify-content: space-between;
+}
+
+.main{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    top: 20px;
+}
+
+.content{
+    background: url(../images/cork-wallet.png) repeat;
+    border-bottom: 4px #4aaaa5 solid;
+    border-top: 2px #cccccc solid;
+}
+
+.about-me{
+    flex: 1;
+    padding-bottom: 10px;
+    border-bottom: 2px #cccccc solid;
+}
+
+.description{
+    display: flex;
+    padding-top: 20px;
+}
+
+.description-image{
+    margin: 0 20px 20px 0;
+}
+
+.footer{
+    background-color: #777777;
+    padding: 20px;
+    align-content: flex-end;
+
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    margin: 0;
+    align-self: flex-end;
+}
