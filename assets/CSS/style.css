@@ -2,7 +2,6 @@
 body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 /* text CSS */
@@ -24,7 +23,6 @@ header{
 }
 
 .name{
-    width: 25vw;
     justify-self: flex-start;
 }
 
@@ -54,6 +52,7 @@ header{
 .main{
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
     background-color: #ffffff;
     top: 20px;
 }
@@ -82,13 +81,12 @@ header{
 .footer{
     background-color: #777777;
     padding: 20px;
+    display: flex;
+    justify-content: center;
     align-content: flex-end;
-
 }
 
 .footer p{
     color: white;
-    text-align: center;
     margin: 0;
-    align-self: flex-end;
 }
