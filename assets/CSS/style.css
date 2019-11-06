@@ -1,61 +1,45 @@
-
-body{
-    display: flex;
-    flex-direction: column;
-}
-
 /* text CSS */
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    margin: 0;
     color: #4aaaa5;
 }
 
-a, p{
+a, p, #text{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
 }
 
 /* Header elements*/
-header{
-    background-color: #ffffff;
-    width: 100%;
+.col-md-12 .header{
+    padding-left: 0;
+    padding-right: 0;
 }
-
 .name{
-    justify-self: flex-start;
+    background-color: #4aaaa5;
+    text-align: center;
 }
 
 .name h1{
     color: #ffffff;
-    background-color: #4aaaa5;
-    padding: 20px;
+    padding: 10px;
 }
 
 .header-nav{
-    margin:0;
+    padding: 0;
     justify-self: flex-end;
     align-self: center;
 }
 
 /* wrapper style*/
 .wrapper{
-    margin: auto;
     width: 70%;
-    display: flex;
-}
-
-.top{
-    justify-content: space-between;
-}
-
-.main{
+    background-color: white;
     padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    background-color: #ffffff;
-    top: 20px;
+    border: 1px #cccccc solid;
+}
+
+.wrapper > .row{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* about me page style*/
@@ -63,22 +47,41 @@ header{
     background: url(../images/cork-wallet.png) repeat;
     border-bottom: 4px #4aaaa5 solid;
     border-top: 2px #cccccc solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content > .container{
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .title{
-    flex-grow: 1;
     padding-bottom: 10px;
     border-bottom: 2px #cccccc solid;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.about{
+    padding:0;
 }
 
 .description{
-    display: flex;
-    padding-top: 20px;
     line-height: 1.5;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
 }
 
-.description-image{
-    margin: 0 20px 20px 0;
+.description-image img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.description-text{
+    padding-left: 20px;
 }
 
 /*Contact Page Styles*/
@@ -103,50 +106,57 @@ header{
 }
 
 /*Portfolio page styles*/
-.gallery{
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    flex-flow: row wrap;
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
-.gallery-image{
-    width: 50%;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    position: relative;
-    justify-content: center;
-}
-
-.gallery-image h3{
+.card-body{
     position: absolute;
     z-index: 2;
-    top: 150px;
+    bottom: 20px;
+    width: 100%;
     background-color: #4aaaa5;
-    color: white;
-    width: 300px;
-    padding: 5px 0;
+    padding: 10px;
     text-align: center;
 }
 
-.gallery-image img{
-    width: 300px;
-    height: 200px;
+.card-title{
+    color: white;
+    margin-bottom: 0;
 }
 
 /* footer style*/
 .footer{
     background-color: #777777;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-content: flex-end;
+}
+
+.footer > .container{
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .footer p{
-    color: white;
-    margin: 0;
-    font-size: 8px;
+    color: #cccccc;
+    text-align: center;
     align-self: flex-end;
-    padding: 5px;
+    font-size: 8px;
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .nav{
+        justify-content: center;
+    }
 }

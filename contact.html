@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
 </head>
 <!--This is where all the web content lives-->
+
 <body>
     <!--This is the header section-->
-    <header>
-        <div class="wrapper top">
-            <!--This the name div-->
-            <div class="name">
-                <h1>Courtney Tucker</h1>
-            </div>
-            <!--This is the header navigation-->
-            <div class="header-nav">
-                <nav>
-                    <a href="index.html">About Me</a> |
-                    <a href="portfolio.html">Portfolio</a> |
-                    <a href="contact.html">Contact</a>
-                </nav>
+    <div class="container">
+        <div class="row">
+            <!--this is a column that is the full width of the screen-->
+            <div class="col-lg-12 col-md-12 col-sm-12 header">
+                <div class="row">
+                    <!--This the name div-->
+                    <div class="col-lg-4 col-md-5 col-sm-12 name">
+                        <h1>Courtney Tucker</h1>
+                    </div>
+                    <div class="col-lg-4 col-md-2"></div>
+                    <!--This is the header navigation-->
+                    <div class="col-lg-4 col-md-5 col-sm-12 header-nav">
+                        <nav class="nav">
+                            <a class="nav-link" href="index.html">About Me</a> |
+                            <a class="nav-link" href="portfolio.html">Portfolio</a> |
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
     <!--This is the main content area-->
     <div class="content">
-        <div class="wrapper">
-            <section class="main">
-                <!--Contact Form Title-->
-                <div class="contact title">
-                    <h2>Contact</h2>
+        <div class="container">
+            <div class="wrapper">
+                <div class="row title">
+                    <div class="col-lg-12 col-md-12 col-sm-12 about">
+                        <h2>Contact
+                        </h2>
+                    </div>
                 </div>
-                <!--Defines the fields of the contact form-->
-                <div class="contact-form">
-                    <form id="contact-info" method="POST" action="">
-                        <p>Name</p>
-                        <input name="name" class="form-control" type="text">
-                        <br>
-                        <p>Email</p>
-                        <input name="email" class="form-control" type="email">
-                        <br>
-                        <p>Message</p>
-                        <textarea name="message" class="form-control" rows="10"></textarea><br>
-                        <input type="submit" class="submit" value="Submit">
-                    </form>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 description">
+                        <div class="contact-form">
+                            <form id="contact-info" method="POST" action="">
+                                <p>Name</p>
+                                <input name="name" class="form-control" type="text">
+                                <br>
+                                <p>Email</p>
+                                <input name="email" class="form-control" type="email">
+                                <br>
+                                <p>Message</p>
+                                <textarea name="message" class="form-control" rows="10"></textarea><br>
+                                <input type="submit" class="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </section>  
-        </div> 
+            </div>
+        </div>
     </div>
-    <footer class="footer">
-        <p>Copyright 2019</p>
-    </footer>     
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <p>Copyright 2019</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
