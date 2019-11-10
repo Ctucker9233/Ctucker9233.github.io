@@ -1,6 +1,12 @@
+body{
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url(../images/brushed_alu_dark.png) repeat;
+}
 /* text CSS */
 h1, h2, h3, h4, h5, h6{
-    color: #4aaaa5;
+    color: #ba0d2a;
 }
 
 a, p, #text{
@@ -8,13 +14,18 @@ a, p, #text{
     color: #777777;
 }
 
+a{
+    font-weight: bold;
+}
+
 /* Header elements*/
-.col-md-12 .header{
+.header{
     padding-left: 0;
     padding-right: 0;
+    background-color: white;
 }
 .name{
-    background-color: #4aaaa5;
+    background-color: #ba0d2a;
     text-align: center;
 }
 
@@ -24,47 +35,38 @@ a, p, #text{
 }
 
 .header-nav{
-    padding: 0;
+    padding: auto;
     justify-self: flex-end;
     align-self: center;
+
 }
 
+.nav{
+    margin: auto;
+}
 /* wrapper style*/
-.wrapper{
-    width: 70%;
-    background-color: white;
-    padding: 20px;
-    border: 1px #cccccc solid;
+.row{
+    margin: auto auto 0 auto; 
 }
 
-.wrapper > .row{
-    margin-left: 10px;
-    margin-right: 10px;
+.container{
+    min-height: 100vh;
 }
-
 /* about me page style*/
-.content{
-    background: url(../images/cork-wallet.png) repeat;
-    border-bottom: 4px #4aaaa5 solid;
+.main{
+    background-color: white;
+    border-bottom: 4px #ba0d2a solid;
     border-top: 2px #cccccc solid;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.content > .container{
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .title{
+    padding-top: 10px;
     padding-bottom: 10px;
+    border-top: 2px #cccccc solid;
     border-bottom: 2px #cccccc solid;
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.about{
-    padding:0;
+    background-color: white;
 }
 
 .description{
@@ -74,10 +76,9 @@ a, p, #text{
     padding-top: 10px;
 }
 
-.description-image img{
-    width: 100%;
-    height: auto;
+.profile{
     padding-bottom: 20px;
+    margin: auto;
 }
 
 .description-text{
@@ -99,7 +100,7 @@ a, p, #text{
 }
 
 .submit{
-    background-color: #4aaaa5;
+    background-color: #ba0d2a;
     color: white;
     padding: 5px 20px;
     border: none;
@@ -115,7 +116,7 @@ a, p, #text{
     z-index: 2;
     bottom: 20px;
     width: 100%;
-    background-color: #4aaaa5;
+    background-color: #ba0d2a;
     padding: 10px;
     text-align: center;
 }
@@ -129,6 +130,8 @@ a, p, #text{
 .footer{
     background-color: #777777;
     height: 50px;
+    width: 100%;
+    margin: auto auto 0 auto; 
 }
 
 .footer > .container{
@@ -142,12 +145,6 @@ a, p, #text{
     text-align: center;
     align-self: flex-end;
     font-size: 8px;
-}
-
-@media screen and (max-width: 768px){
-    .wrapper{
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 640px){
